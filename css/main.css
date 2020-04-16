@@ -58,7 +58,14 @@ main input:focus {
   background: rgba(255,255,255, 1);
 }
 
+/* UTILITIES */
+.done {
+  text-decoration: underline;
+}
 
+/* .inline {
+  display: inline-block;
+} */
 
 /* TEMPLATE */
 .template {

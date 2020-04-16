@@ -22,9 +22,17 @@ $(document).ready( function() {
     }
   });
 
+  // REMOVE AND UNDERLINE
   $('body').on('click', '.todo li i', function() {
     $(this).parent().remove();
   })
+
+  // $('body').on('click', '.todo li', function() {
+  //     $(this).parent().toggleClass('done');
+  // })  <--------- da fixare e sistemare
+
+
+
 
 
 
