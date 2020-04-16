@@ -4,7 +4,27 @@
 
 $(document).ready( function() {
 
-  var todoList = ['Comprare la pasta', 'Pagare la bolletta della fibra', 'Pulire il bagno', 'Ricordati che devi morire']
+  var list = $('.todo');
+  var keyInput = $('.addelement');
+
+  keyInput.keyup(function(e) {
+    console.log(e.which, e.keyCode);
+
+    if (e.which == 13 || e.keyCode == 13) {
+      var inputList = keyInput.val().trim();
+
+        if (inputList.length > 0) {
+          var newInputList = $('.template li').clone();
+          newInputList.prepend(inputList);
+          list.append(newInputList);
+          keyInput.val('');
+        }
+    }
+  });
+
+  $('body').on('click', '.todo li i', function() {
+    $(this).parent().remove();
+  })
 
 
 

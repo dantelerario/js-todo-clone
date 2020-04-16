@@ -14,7 +14,7 @@ body {
 /* CONTENT */
 #list {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   width: 600px;
   height: 100vh;
@@ -22,17 +22,9 @@ body {
   padding: 20px;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: : center;
-}
-
-/* main ul {
-  margin-top: 30px;
-} */
-
 main ul li {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
   padding: 10px;
   border-bottom: 1px solid rgba(51,71,91, .9);
@@ -43,7 +35,6 @@ main ul li:last-child {
 }
 
 main ul li i {
-  margin-left: 400px;
   cursor: pointer;
   color: rgba(196, 200, 206, .5);
 }
